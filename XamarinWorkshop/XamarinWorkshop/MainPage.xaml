@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="Crimson"
+             x:Class="XamarinWorkshop.MainPage">
+
+    <StackLayout  
+          HorizontalOptions="Center"
+          VerticalOptions="CenterAndExpand">
+        <Label Text="PokeDex" FontSize="20" TextColor="Yellow" HorizontalOptions="Center"/>
+        <Entry x:Name="pokemonEntry" BackgroundColor="White"/>
+        <Button Text="Search Pokemon" BackgroundColor="Yellow" TextColor="Black" Clicked="Button_ClickedAsync"/>
+        <Image x:Name="pokemonImage" HeightRequest="300" WidthRequest="300" BackgroundColor="White"/>
+        <Label x:Name="pokemonName" FontSize="30" TextColor="Yellow" HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>
